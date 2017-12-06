@@ -1,0 +1,74 @@
+.check-flat {
+	background: url("../img/check-flat.png") no-repeat center/cover;
+}
+
+.h1020 {
+	height: 1020px;
+}
+
+.h340 {
+	height: 340px;
+}
+
+.h680 {
+	height: 680px;
+}
+
+.complex-list {
+	&__item {
+		position: relative;
+		overflow: hidden;
+		&_first {
+			background: url("../img/first-img.png") no-repeat center;
+		}
+		&_second {
+			background: url("../img/second-img.png") no-repeat center;
+		}
+		&_third {
+			background: url("../img/third-img.png") no-repeat center;
+		}
+		&_fourth {
+			background: url("../img/fourth-img.png") no-repeat center;
+		}
+		&_first,
+		&_second,
+		&_third,
+		&_fourth {
+			-webkit-background-size: 101%;
+			background-size: 101%;
+			transition: transform $tr-middle;
+			&:hover {
+				transform: scale(1.1, 1.1);
+				a {
+					transform: scale(.9, .9);
+				}
+			}
+		}
+
+	}
+	&__block {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,.5);
+		opacity: 0;
+		transition: all $tr-middle;
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+
+.normal-list {
+	&__item {
+		line-height: 1.875;
+	}
+}
+
+#map {
+	display: block;
+	width: 100%;
+	height: 600px;
+}

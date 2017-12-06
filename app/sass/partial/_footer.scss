@@ -1,0 +1,27 @@
+footer {
+	padding: 120px 100px 60px;
+}
+
+.footer-list {
+	&__item {
+		&_first {
+			margin-bottom: 20px;
+		}
+	}
+	&__link {
+		font-size: 1.4rem;
+		line-height: 1.6;
+		color: $text-color1;
+		&_first {
+			font-size: 1.6rem;
+		}
+		&:hover,
+		&:focus {
+			color: $text-color1;
+		}
+	}
+}
+
+.download-pdf {
+	color: $text-color1;
+}

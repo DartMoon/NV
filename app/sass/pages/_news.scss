@@ -1,0 +1,46 @@
+.primary-line {
+	height: 1px;
+	margin: 60px 100px 0;
+	background-color: $primary-color;
+
+}
+
+.news {
+	flex: 1 1 auto;
+	&__time {
+		display: block;
+		font-size: 1.4rem;
+		margin-bottom: 25px;
+	}
+	&__headline {
+		font-size: 1.8rem;
+		margin-bottom: 35px;
+	}
+	&__text {
+		margin-bottom: 35px;
+	}
+	&__bttn {
+		margin-left: 0;
+	}
+}
+
+.pagination {
+	margin: 50px 0;
+	& .page-item {
+	}
+	& .page-link {
+		position: relative;
+		display: block;
+		font-size: 1.8rem;
+		color: $text-color1;
+		border: 0;
+		&.active{
+			color: #f9ad81;
+		}
+		&:hover {
+			background-color: transparent;
+			color: #f9ad81;
+		}
+	}
+}
+

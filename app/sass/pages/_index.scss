@@ -1,0 +1,112 @@
+.top-bg {
+	background: url("../img/top-banner.png") no-repeat center/cover;
+}
+.middle-bg {
+	background: url("../img/middle-banner.png") no-repeat center/cover;
+}
+.bottom-bg {
+	background: url("../img/bottom-banner.png") no-repeat center/cover;
+}
+
+header {
+	&.banner {
+		max-height: 500px !important;
+		background: url("../img/banner.png") no-repeat center/cover;
+	}
+}
+
+.comfort {
+	& .col {
+		max-width: 300px;
+	}
+	a {
+		margin-top: 25px;
+	}
+}
+
+.infrastructure {
+	a {
+		max-width: 400px;
+		margin-top: 100px;
+	}
+}
+
+.about-towers {
+	a {
+		margin-top: 25px;
+	}
+}
+
+.value-block {
+	font-weight: 700;
+	color: $color1;
+	&__num {
+		font-size: 50px;
+	}
+	&__text {
+		font-size: 20px;
+		margin-top: 20px;
+	}
+}
+
+.partners {
+	a {
+		margin-top: 25px;
+	}
+}
+
+.contacts {
+	p {
+		//margin-top: 0;
+	}
+	p,a {
+		font-size: 1.8rem;
+		font-weight: 500;
+	}
+	p,a,i {
+		color: $color1;
+	}
+	.text-primary {
+		p,a,i {
+			color: $text-color1;
+		}
+	}
+}
+
+.modal-backdrop {
+	background-color: #fff;
+}
+.modal-content {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	border: 3px solid $primary-color-rgba;
+	padding: 85px 70px;
+	& [aria-label="Close"] {
+		position: absolute;
+		top: 30px;
+		right: 30px;
+		color: $primary-color;
+	}
+	h4 {
+		margin-bottom: 35px;
+	}
+}
+.recall-form {
+	&__input,
+	&__label {
+		display: block;
+		width: 100%;
+	}
+	&__input {
+		height: 55px;
+		font-size: 1.8rem;
+		border: 1px solid #494949;
+		padding-left: 15px;
+		margin-bottom: 35px;
+	}
+	&__label {
+		font-size: 1.6rem;
+		margin-bottom: 10px;
+	}
+}

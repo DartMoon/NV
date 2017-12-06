@@ -1,0 +1,106 @@
+@import "libs";
+@import "reset";
+@import "vars";
+
+html {
+	font-size: 10px;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden !important;
+	overflow-y: scroll !important;
+	padding: 0;
+	font-size: 1.6rem;
+	letter-spacing: 1px;
+	color: $text-color1;
+}
+
+h2 {
+	font-size: 2.2rem;
+	padding-bottom: 15px;
+}
+
+h3 {
+	font-size: 2rem;
+	padding: 10px 15px;
+	&.rotate {
+		position: absolute;
+		//top: 0;
+		&_left {
+			transform: translateX(-100%) rotate(-90deg);
+			transform-origin: right top;
+			left: 100px;
+		}
+		&_right {
+			transform: translateX(100%) rotate(90deg);
+			transform-origin: left top;
+			right: 100px;
+		}
+	}
+}
+
+h4 {
+	font-size: 1.8rem;
+	font-weight: 700;
+	line-height: 1.333;
+}
+
+h2,h3 {
+	font-weight: 600;
+	line-height: 1.5;
+	&.white {
+		color: $color1;
+	}
+	&.title-bd-white {
+		border-bottom: 3px solid $color1;
+	}
+	&.title-bd-primary {
+		border-bottom: 3px solid $primary-color;
+	}
+}
+
+p {
+	line-height: 2;
+	text-align: justify;
+	margin-top: 45px;
+}
+
+section {
+	position: relative;
+}
+
+.container {
+	position: relative;
+}
+
+.white {
+	color: $color1;
+}
+.primary {
+	color: $primary-color;
+}
+
+.main-pad {
+	padding: 120px 0;
+}
+
+.min-h-85 {
+	min-height: 85px;
+}
+
+@import "buttons";
+@import "partial/menu";
+@import "partial/banner";
+@import "partial/footer";
+
+@import "pages/index";
+@import "pages/complex";
+@import "pages/about";
+@import "pages/infrastructure";
+@import "pages/news";
+@import "pages/article";
+

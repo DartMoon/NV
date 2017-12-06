@@ -1,0 +1,100 @@
+.bttn {
+	display: block;
+	border: 0;
+	background-color: transparent;
+	text-align: center;
+	outline: none !important;
+	cursor: pointer;
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+}
+
+.bttn-280 {
+	max-width: 280px;
+}
+
+.main-bttn {
+	width: 100%;
+	font-size: 2rem;
+	font-weight: 700;
+	color: $primary-color;
+	border: 2px solid $primary-color;
+	background-color: $color1;
+	padding: 20px 0;
+	transition: all $tr-fast;
+	margin: 0 auto;
+	&:hover,
+	&:focus {
+		color: $color1;
+		border-color: $color1;
+		background-color: $primary-color;
+	}
+	&_white {
+		color: $color1;
+		border-color: $color1;
+		background-color: transparent;
+		&:hover,
+		&:focus {
+			color: $primary-color;
+			border-color: $primary-color;
+			background-color: $color1;
+		}
+	}
+	&_marg-t {
+		margin-top: 70px;
+	}
+}
+
+.menu-bttn {
+	position: fixed;
+	top: 41px;
+	i {
+		color: $color1;
+	}
+	&.openMenu {
+		left: 100px;
+		padding: 0;
+	}
+	&.closeMenu {
+		right: 100px;
+		padding: 0;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.menu-bttn {
+		top: 15px;
+		i {
+			color: $color1;
+		}
+		&.openMenu {
+			left: 15px;
+		}
+		&.closeMenu {
+			right: 15px;
+		}
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}

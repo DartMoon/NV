@@ -1,0 +1,41 @@
+.menu-wrap {
+	position: fixed;
+	z-index: 5;
+	width: 100%;
+	height: 100vh;
+	background-color: $primary-color-rgba;
+	overflow: hidden;
+	transition: transform $tr-middle;
+	transform: translateX(100%);
+	&_open {
+		transform: translateX(0%);
+	}
+}
+
+.overflow-hidden {
+	overflow: hidden;
+}
+
+.nav-list {
+	&__item {
+		font-size: 2.4rem;
+		font-weight: 700;
+		line-height: 2.5;
+		color: $color1;
+		border: 2px solid transparent;
+		padding: 0 57px;
+		transition: border $tr-fast;
+		&:hover,
+		&:focus {
+			border: 2px solid $color1;
+		}
+	}
+	&__link {
+		color: inherit;
+		&:hover,
+		&:focus {
+			color: inherit;
+			text-decoration: none;
+		}
+	}
+}

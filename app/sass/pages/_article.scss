@@ -1,0 +1,18 @@
+.backLink {
+	position: absolute;
+	z-index:10;
+	left: 100px;
+	display: block;
+	font-size: 1.8rem;
+	font-weight: 700;
+	color: $text-color1;
+	padding: 60px 0 0;
+	&:hover,
+	&:focus {
+		color: $text-color1;
+	}
+}
+
+.article {
+
+}
