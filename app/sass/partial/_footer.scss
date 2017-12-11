@@ -3,6 +3,7 @@ footer {
 }
 
 .footer-list {
+	margin-bottom: 20px;
 	&__item {
 		&_first {
 			margin-bottom: 20px;
@@ -22,6 +23,42 @@ footer {
 	}
 }
 
+.social {
+	margin-top: 20px;
+	li {
+		a {
+			color: $text-color1;
+		}
+	}
+}
+
 .download-pdf {
 	color: $text-color1;
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	footer {
+		padding: 80px 15px 60px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
 }

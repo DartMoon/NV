@@ -1,6 +1,21 @@
+.top-bg {
+	background: url("../img/top-banner.png") no-repeat center/ cover;
+}
+.middle-bg {
+	background: url("../img/middle-banner.png") no-repeat center/ cover;
+}
+.bottom-bg {
+	background: url("../img/bottom-banner.png") no-repeat center bottom/ cover;
+}
+
 header {
 	height: 100vh;
 	min-height: 700px;
+	&.banner {
+		max-height: 400px !important;
+		min-height: 400px !important;
+		background: url("../img/banner.png") no-repeat center/cover;
+	}
 }
 
 .m-banner {
@@ -18,10 +33,12 @@ header {
 .recall {
 	position: absolute;
 	right: 100px;
+	z-index: 2;
 	top: 48px;
 	font-size: 20px;
 	font-weight: 700;
 	color: $color1;
+	outline: none;
 	&:hover {
 		color: $color1;
 	}
@@ -43,7 +60,13 @@ header {
 		&__title {
 			font-size: 2.2rem;
 			margin-top: 50px;
+			text-align: center;
 		}
+	}
+
+	.recall {
+		right: 15px;
+		top: 21px;
 	}
 
 }

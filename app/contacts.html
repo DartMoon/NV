@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
+<!--Menu-->
 <menu class="menu-wrap">
 	<button class="bttn menu-bttn closeMenu"><i class="fa fa-close fa-2x"></i></button>
 	<nav class="d-flex flex-column justify-content-center  align-items-center h-100">
@@ -23,7 +24,7 @@
 				<a class="nav-list__link" href="/complex.html">О комплексе</a>
 			</li>
 			<li class="nav-list__item">
-				<a class="nav-list__link" href="/appartments">Квартиры</a>
+				<a class="nav-list__link" href="/apartments-level.html">Квартиры</a>
 			</li>
 			<li class="nav-list__item">
 				<a class="nav-list__link" href="/contacts.html">Контакты</a>
@@ -34,6 +35,8 @@
 		</ul>
 	</nav>
 </menu>
+<!--Menu End-->
+<!--Header-->
 <header class="banner">
 	<button class="bttn menu-bttn openMenu"><i class="fa fa-bars fa-2x"></i></button>
 	<a class="recall" href="#" data-toggle="modal" data-target="#recall">Заказать звонок</a>
@@ -45,26 +48,28 @@
 		</div>
 	</div>
 </header>
+<!--Header end-->
+<!--Main section-->
 <section class="main-pad contacts">
 	<h3 class="title-bd-primary rotate rotate_left">Контакты</h3>
 	<div class="container">
 		<div class="row text-primary">
-			<div class="col align-self-end">
-				<p>График работы
+			<div class="col-lg col-md-6 align-self-end">
+				<p class="text-center text-lg-left">График работы
 					<br>Пн-Пт с 9:00 до 18:00
 					<br>Сб-Вс с 10 до 19</p>
 			</div>
-			<div class="col align-self-end">
-				<p>г. Днепр,
+			<div class="col-lg col-md-6 align-self-end">
+				<p class="text-center text-lg-left">г. Днепр,
 					<br>Красный Камень
 					<br>
 					<a href="tel:+38056345656">+38 (0562) 34 56 56</a></p>
 			</div>
-			<div class="col align-self-end text-center">
+			<div class="col-lg col-md-6 align-self-end text-center">
 				<i class="d-block fa fa-envelope-o fa-3x"></i>
 				<a class="mt-5 d-block" href="#">Заполнить онлайн заявку</a>
 			</div>
-			<div class="col align-self-end text-center">
+			<div class="col-lg col-md-6 align-self-end text-center">
 				<i class="d-block fa fa-phone fa-3x"></i>
 				<a class="mt-5 d-block" href="#">Заказать звонок</a>
 			</div>
@@ -72,10 +77,12 @@
 	</div>
 </section>
 <div id="map"></div>
+<!--Main section end-->
+<!--Footer-->
 <footer>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col">
+			<div class="col-lg col-sm-6">
 				<ul class="footer-list">
 					<li class="footer-list__item footer-list__item_first">
 						<a class="footer-list__link footer-list__link_first" href="/complex.html">О комплексе</a></li>
@@ -91,7 +98,7 @@
 						<a class="footer-list__link" href="/partners.html">О партнерах</a></li>
 				</ul>
 			</div>
-			<div class="col">
+			<div class="col-lg col-sm-6">
 				<ul class="footer-list">
 					<li class="footer-list__item footer-list__item_first">
 						<a class="footer-list__link footer-list__link_first" href="#">Квартиры</a></li>
@@ -103,33 +110,40 @@
 						<a class="footer-list__link" href="#">Планировка квартир</a></li>
 				</ul>
 			</div>
-			<div class="col">
+			<div class="col-lg col-sm-6">
 				<ul class="footer-list">
 					<li class="footer-list__item footer-list__item_first">
 						<a class="footer-list__link footer-list__link_first" href="/contacts.html">Контакты</a></li>
 				</ul>
 			</div>
-			<div class="col">
+			<div class="col-lg col-sm-6">
 				<ul class="footer-list">
 					<li class="footer-list__item footer-list__item_first">
 						<a class="footer-list__link footer-list__link_first" href="/news.html">Новости</a></li>
 				</ul>
 			</div>
-			<div class="col">
-				<span>Социальные сети:</span>
-				<div class="social">
-
-				</div>
-
+			<div class="col-lg col-sm-6">
+				<span class="d-block w-100 text-center">Социальные сети:</span>
+				<ul class="d-flex justify-content-between social">
+					<li class="">
+						<a href="#"><i class="fa fa-2x fa-google-plus"></i></a></li>
+					<li class="">
+						<a href="#"><i class="fa fa-2x fa-twitter"></i></a></li>
+					<li class="">
+						<a href="#"><i class="fa fa-2x fa-facebook"></i></a></li>
+					<li class="">
+						<a href="#"><i class="fa fa-2x fa-instagram"></i></a></li>
+				</ul>
 			</div>
 		</div>
-		<div class="row flex-column justify-content-center align-items-center mt-5">
-			<a class="mt-5 download-pdf" href="#">Скачать PDF презентацию</a>
-			<span class="mt-3">Copyright 2017</span>
-		</div>
+	</div>
+	<div class="row flex-column justify-content-center align-items-center mt-5">
+		<a class="mt-5 download-pdf" href="#">Скачать PDF презентацию</a>
+		<span class="mt-3">Copyright 2017</span>
+	</div>
 	</div>
 </footer>
-
+<!--Footer end-->
 <!-- Recall Modal-->
 <div class="modal fade" id="recall" tabindex="-1" role="dialog" aria-labelledby="recallModalLabel" aria-hidden="true">
 	<div class="modal-dialog" role="document">
@@ -150,7 +164,6 @@
 	</div>
 </div>
 <!-- Recall Modal End-->
-
 <script src="js/scripts.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOmO-wmCr3ga5hD7z9cvqHCreS4ANoQy0&callback=initMap"
 		async defer></script>

@@ -13,8 +13,6 @@ var gulp           = require('gulp'),
 		notify         = require("gulp-notify"),
 		rsync          = require('gulp-rsync');
 
-// Скрипты проекта
-
 gulp.task('common-js', function() {
 	return gulp.src([
 		'app/js/common.js',
@@ -24,19 +22,10 @@ gulp.task('common-js', function() {
 	.pipe(gulp.dest('app/js'));
 });
 
-// gulp.task('common-js', function() {
-//     return gulp.src('app/js/common.js')
-//         .pipe(babel({
-//             presets: ['@babel/preset-env']
-//         }))
-//         .pipe(concat('common.min.js'))
-//         .pipe(uglify())
-//         .pipe(gulp.dest('app/js'))
-// });
-
 gulp.task('js', ['common-js'], function() {
 	return gulp.src([
 		'app/libs/jquery/jquery-3.2.1.min.js',
+		'app/libs/noUiSlider/nouislider.min.js',
 		'app/libs/popper/popper.js',
 		'app/libs/bootstrap/dist/js/bootstrap.min.js',
 		'app/js/common.min.js', // Всегда в конце

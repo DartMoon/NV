@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
+<!--Menu-->
 <menu class="menu-wrap">
 	<button class="bttn menu-bttn closeMenu"><i class="fa fa-close fa-2x"></i></button>
 	<nav class="d-flex flex-column justify-content-center  align-items-center h-100">
@@ -23,7 +24,7 @@
 				<a class="nav-list__link" href="/complex.html">О комплексе</a>
 			</li>
 			<li class="nav-list__item">
-				<a class="nav-list__link" href="/appartments">Квартиры</a>
+				<a class="nav-list__link" href="/apartments-level.html">Квартиры</a>
 			</li>
 			<li class="nav-list__item">
 				<a class="nav-list__link" href="/contacts.html">Контакты</a>
@@ -34,6 +35,8 @@
 		</ul>
 	</nav>
 </menu>
+<!--Menu End-->
+<!--Header-->
 <header class="banner">
 	<button class="bttn menu-bttn openMenu"><i class="fa fa-bars fa-2x"></i></button>
 	<a class="recall" href="#" data-toggle="modal" data-target="#recall">Заказать звонок</a>
@@ -45,6 +48,8 @@
 		</div>
 	</div>
 </header>
+<!--Header end-->
+<!--Main section-->
 <section class="main-pad">
 	<h3 class="title-bd-primary rotate rotate_left">О инфраструктуре</h3>
 	<div class="container">
@@ -52,16 +57,18 @@
 			<div class="col">
 				<h2>О плюсах окружения</h2>
 				<ul class="normal-list">
-					<li class="normal-list__item">Локация в центре, где кипит деловая и культурная жизнь</li>
-					<li class="normal-list__item">Усиленная безопасность нaа территории жилого комплекса</li>
-					<li class="normal-list__item">Свобода выбора благодаря разнообразию планировочных      решений</li>
-					<li class="normal-list__item">Энергоэффективные технологии</li>
-					<li class="normal-list__item">Экологичность строительных материалов</li>
-					<li class="normal-list__item">Комфорт европейского уровня</li>
+					<li class="normal-list__item">Вдохновляет Вас своей архитектурой</li>
+					<li class="normal-list__item">Окружает Вас спокойствием природы</li>
+					<li class="normal-list__item">Балует Вас обширной инфраструктурой</li>
+					<li class="normal-list__item">Приспосабливается к Вашим личным нуждам</li>
+					<li class="normal-list__item">Ваше видение становится реальностью в совершенно новых домах “Новокодацькі Вежі”!</li>
 				</ul>
 			</div>
-			<div class="col text-right">
-				<img src="img/test-big-img.png" alt="">
+			<div class="col-md text-right d-none d-md-block text-right">
+				<img class="w-75" src="img/plus.png" alt="">
+			</div>
+			<div class="col-md d-md-none">
+				<img class="w-100 mt-5" src="img/plus.png" alt="">
 			</div>
 		</div>
 	</div>
@@ -73,22 +80,25 @@
 				<h2 class="mb-5">До центра города</h2>
 			</div>
 			<div class="w-100"></div>
-			<div class="col">
+			<div class="col-md">
 				<ul class="plus-list">
+					<li class="plus-list__item"><i class="fa fa-2x fa-car"></i></li>
 					<li class="plus-list__item">10 мин</li>
 					<li class="plus-list__line"></li>
 					<li class="plus-list__item">на машине</li>
 				</ul>
 			</div>
-			<div class="col">
+			<div class="col-md">
 				<ul class="plus-list">
+					<li class="plus-list__item"><i class="fa fa-2x fa-bus"></i></li>
 					<li class="plus-list__item">10 мин</li>
 					<li class="plus-list__line"></li>
 					<li class="plus-list__item">на мащине</li>
 				</ul>
 			</div>
-			<div class="col">
+			<div class="col-md">
 				<ul class="plus-list">
+					<li class="plus-list__item"><i class="fa fa-2x fa-subway"></i></li>
 					<li class="plus-list__item">10 мин</li>
 					<li class="plus-list__line"></li>
 					<li class="plus-list__item">на мащине</li>
@@ -105,10 +115,12 @@
 		</div>
 	</div>
 </section>
+<!--Main section end-->
+<!--Footer-->
 <footer>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col">
+			<div class="col-lg col-sm-6">
 				<ul class="footer-list">
 					<li class="footer-list__item footer-list__item_first">
 						<a class="footer-list__link footer-list__link_first" href="/complex.html">О комплексе</a></li>
@@ -124,7 +136,7 @@
 						<a class="footer-list__link" href="/partners.html">О партнерах</a></li>
 				</ul>
 			</div>
-			<div class="col">
+			<div class="col-lg col-sm-6">
 				<ul class="footer-list">
 					<li class="footer-list__item footer-list__item_first">
 						<a class="footer-list__link footer-list__link_first" href="#">Квартиры</a></li>
@@ -136,33 +148,40 @@
 						<a class="footer-list__link" href="#">Планировка квартир</a></li>
 				</ul>
 			</div>
-			<div class="col">
+			<div class="col-lg col-sm-6">
 				<ul class="footer-list">
 					<li class="footer-list__item footer-list__item_first">
 						<a class="footer-list__link footer-list__link_first" href="/contacts.html">Контакты</a></li>
 				</ul>
 			</div>
-			<div class="col">
+			<div class="col-lg col-sm-6">
 				<ul class="footer-list">
 					<li class="footer-list__item footer-list__item_first">
 						<a class="footer-list__link footer-list__link_first" href="/news.html">Новости</a></li>
 				</ul>
 			</div>
-			<div class="col">
-				<span>Социальные сети:</span>
-				<div class="social">
-
-				</div>
-
+			<div class="col-lg col-sm-6">
+				<span class="d-block w-100 text-center">Социальные сети:</span>
+				<ul class="d-flex justify-content-between social">
+					<li class="">
+						<a href="#"><i class="fa fa-2x fa-google-plus"></i></a></li>
+					<li class="">
+						<a href="#"><i class="fa fa-2x fa-twitter"></i></a></li>
+					<li class="">
+						<a href="#"><i class="fa fa-2x fa-facebook"></i></a></li>
+					<li class="">
+						<a href="#"><i class="fa fa-2x fa-instagram"></i></a></li>
+				</ul>
 			</div>
 		</div>
-		<div class="row flex-column justify-content-center align-items-center mt-5">
-			<a class="mt-5 download-pdf" href="#">Скачать PDF презентацию</a>
-			<span class="mt-3">Copyright 2017</span>
-		</div>
+	</div>
+	<div class="row flex-column justify-content-center align-items-center mt-5">
+		<a class="mt-5 download-pdf" href="#">Скачать PDF презентацию</a>
+		<span class="mt-3">Copyright 2017</span>
+	</div>
 	</div>
 </footer>
-
+<!--Footer end-->
 <!-- Recall Modal-->
 <div class="modal fade" id="recall" tabindex="-1" role="dialog" aria-labelledby="recallModalLabel" aria-hidden="true">
 	<div class="modal-dialog" role="document">
@@ -183,7 +202,6 @@
 	</div>
 </div>
 <!-- Recall Modal End-->
-
 <script src="js/scripts.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOmO-wmCr3ga5hD7z9cvqHCreS4ANoQy0&callback=initMap"
 		async defer></script>

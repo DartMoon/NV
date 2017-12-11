@@ -29,7 +29,6 @@ h3 {
 	padding: 10px 15px;
 	&.rotate {
 		position: absolute;
-		//top: 0;
 		&_left {
 			transform: translateX(-100%) rotate(-90deg);
 			transform-origin: right top;
@@ -93,9 +92,11 @@ section {
 }
 
 @import "buttons";
+
 @import "partial/menu";
 @import "partial/banner";
 @import "partial/footer";
+@import "partial/slider";
 
 @import "pages/index";
 @import "pages/complex";
@@ -103,4 +104,52 @@ section {
 @import "pages/infrastructure";
 @import "pages/news";
 @import "pages/article";
+@import "pages/apartments-level";
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1460px) {
+	h3 {
+		font-size: 2rem;
+		padding: 10px 15px;
+		&.rotate {
+			&_left {
+				left: 15px;
+			}
+			&_right {
+				right: 15px;
+			}
+		}
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	h3 {
+		&.rotate {
+			display: none;
+		}
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.main-pad {
+		padding: 80px 0;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
 

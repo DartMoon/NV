@@ -48,8 +48,9 @@
 }
 
 .menu-bttn {
-	position: fixed;
+	position: absolute;
 	top: 41px;
+	z-index: 1;
 	i {
 		color: $color1;
 	}

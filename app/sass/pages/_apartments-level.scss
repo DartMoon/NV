@@ -1,0 +1,29 @@
+.apartments-level {
+
+	.cls-1, .cls-2, .cls-3, .cls-4 {
+		fill: transparent !important;
+	}
+	.cls-3 {
+		font-size: 36px;
+	}
+	.cls-4 {
+		font-size: 23px;
+	}
+
+
+	g {
+		&:hover {
+			cursor: pointer;
+			.cls-1 {
+				fill: #f9ad81 !important;
+				opacity: .9;
+			}
+			.cls-2 {
+				fill: #2a648f !important;
+			}
+			.cls-3, .cls-4 {
+				fill: #fff !important;
+			}
+		}
+	}
+}

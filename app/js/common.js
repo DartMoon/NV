@@ -1,3 +1,5 @@
+'use strict';
+
 var openBtn = document.querySelector('.openMenu');
 var closeBtn = document.querySelector('.closeMenu');
 
@@ -29,4 +31,42 @@ function initMap() {
         title: 'Hello World!'
     });
 }
+
+var sliderLevel = document.getElementById('slider-level');
+var sliderTotalArea = document.getElementById('slider-total-area');
+var sliderLivingSpace = document.getElementById('slider-living-space');
+
+noUiSlider.create(sliderLevel, {
+    start: [14],
+    connect: true,
+    tooltips: [ true ],
+    step: 1,
+    range: {
+        'min': 1,
+        'max': 24
+    }
+});
+noUiSlider.create(sliderTotalArea, {
+    start: [45, 80],
+    connect: true,
+    tooltips: [true, true ],
+    step: 1,
+    range: {
+        'min': 38,
+        'max': 100
+    }
+});
+noUiSlider.create(sliderLivingSpace, {
+    start: [15, 80],
+    connect: true,
+    tooltips: [ true , true],
+    step: 1,
+    range: {
+        'min': 20,
+        'max': 55
+    }
+});
+
+
+
 
