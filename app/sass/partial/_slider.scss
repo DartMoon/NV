@@ -1,0 +1,135 @@
+.input-slider {
+	position: relative;
+	max-width: 250px;
+	width: 100%;
+	margin: 35px 0 40px;
+	&:before,
+	&:after {
+		position: absolute;
+		top: -30px;
+		display: block;
+	}
+	&:before {
+		left: 0;
+		//content: 'от';
+
+	}
+	&:after {
+		right: 0;
+		//content: 'до';
+	}
+}
+
+.noUi-base {
+	height: 2px;
+}
+.noUi-connect {
+	background: $primary-color;
+	box-shadow: none;
+	height: 2px;
+	border-radius: 0;
+}
+.noUi-target {
+	background: $primary-color;
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+}
+.noUi-horizontal {
+	height: 2px;
+
+	.noUi-handle {
+		left: 0;
+		border: 0;
+		border-radius: 100%;
+		background: #f9ad81;
+		cursor: pointer;
+		box-shadow: none;
+
+		width: 16px;
+		height: 16px;
+		outline: none;
+		&:before,
+		&:after {
+			display: none;
+		}
+	}
+}
+.noUi-tooltip {
+	border: 0;
+}
+
+[type="radio"] + label {
+	width: 55px;
+	height: 40px;
+	span {
+		position: absolute;
+		z-index: 1;
+		left: 0;
+		top: 0;
+		width: 55px;
+		text-align: center;
+		line-height: 40px;
+		display: block;
+	}
+
+}
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+	position: absolute;
+	left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label {
+	position: relative;
+	padding-left: 28px;
+	cursor: pointer;
+	line-height: 20px;
+	display: inline-block;
+	color: #666;
+}
+[type="radio"]:checked + label {
+	span {
+		color: $color1;
+	}
+}
+[type="radio"]:not(:checked) + label {
+	span {
+		color: $primary-color;
+	}
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 55px;
+	height: 40px;
+	border: 1px solid #ddd;
+	//border-radius: 100%;
+	background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+	content: '';
+	width: 55px;
+	height: 40px;
+	background: $primary-color;
+	position: absolute;
+	top: 0;
+	left: 0;
+	//border-radius: 100%;
+	-webkit-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+	opacity: 0;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}

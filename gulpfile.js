@@ -26,6 +26,7 @@ gulp.task('js', ['common-js'], function() {
 	return gulp.src([
 		'app/libs/jquery/jquery-3.2.1.min.js',
 		'app/libs/noUiSlider/nouislider.min.js',
+		'app/libs/wnumb-1.1.0/wNumb.js',
 		'app/libs/popper/popper.js',
 		'app/libs/bootstrap/dist/js/bootstrap.min.js',
 		'app/js/common.min.js', // Всегда в конце

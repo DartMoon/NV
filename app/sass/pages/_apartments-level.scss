@@ -9,8 +9,6 @@
 	.cls-4 {
 		font-size: 23px;
 	}
-
-
 	g {
 		&:hover {
 			cursor: pointer;
@@ -25,5 +23,46 @@
 				fill: #fff !important;
 			}
 		}
+	}
+}
+
+.level-plan {
+	.cls-1, .cls-2, .cls-3, .cls-5 {
+		fill: transparent !important;
+	}
+	.cls-4, .cls-6 {
+		stroke: transparent !important;
+	}
+
+	g {
+		&:hover {
+			cursor: pointer;
+			.cls-2 {
+				fill: #2a648f !important;
+				opacity: .9;
+			}
+			.cls-3 {
+				fill: #fff !important;
+				opacity: .9;
+			}
+			.cls-4, .cls-6 {
+				stroke: #fff !important;
+			}
+			.cls-5 {
+				fill: #f9ad81 !important;
+			}
+		}
+	}
+}
+
+.tower-form {
+	max-width: 900px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.filter {
+	&__text {
+		font-weight: 700;
 	}
 }

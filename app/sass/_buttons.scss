@@ -24,7 +24,7 @@
 	background-color: $color1;
 	padding: 20px 0;
 	transition: all $tr-fast;
-	margin: 0 auto;
+	//margin: 0 auto;
 	&:hover,
 	&:focus {
 		color: $color1;
@@ -64,6 +64,22 @@
 	}
 }
 
+.backLink {
+	//position: absolute;
+	//z-index:10;
+	//left: 100px;
+	display: block;
+	font-size: 1.8rem;
+	font-weight: 700;
+	color: $text-color1;
+	//padding: 60px 0 0;
+	margin-bottom: 20px;
+	&:hover,
+	&:focus {
+		color: $text-color1;
+	}
+}
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 
@@ -92,7 +108,9 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+	.bttn-280 {
+		max-width: 100%;
+	}
 }
 
 /* Custom, iPhone Retina */

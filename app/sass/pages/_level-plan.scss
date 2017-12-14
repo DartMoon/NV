@@ -1,0 +1,45 @@
+.chose-tower {
+	margin: 35px 0 40px;
+}
+
+.about-flat-list {
+	&__item {
+		margin: 0 20px;
+	}
+	&__color {
+		width: 40px;
+		height: 40px;
+		margin: 0 auto;
+		&_two {
+			background-color: $primary-color;
+		}
+		&_one {
+			background-color: #f9ad81;
+		}
+		&_sold {
+			background-color: #c0c0c0;
+		}
+	}
+	&__text {
+		font-size: 1.2rem;
+		line-height: 2.5;
+		text-align: center;
+		margin-top: 0;
+	}
+}
+
+.chose-list {
+	font-size: 2rem;
+	line-height: 1.5;
+	font-weight: 700;
+	margin-top: 40px;
+	&__item {
+		justify-content: space-between;
+		span {
+			display: inline-block;
+			font-size: 3rem;
+			color: $primary-color;
+			text-align: right;
+		}
+	}
+}

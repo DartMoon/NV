@@ -40,6 +40,9 @@ noUiSlider.create(sliderLevel, {
     start: [14],
     connect: true,
     tooltips: [ true ],
+    format: wNumb({
+        decimals: 0
+    }),
     step: 1,
     range: {
         'min': 1,
@@ -51,6 +54,9 @@ noUiSlider.create(sliderTotalArea, {
     connect: true,
     tooltips: [true, true ],
     step: 1,
+    format: wNumb({
+        decimals: 0
+    }),
     range: {
         'min': 38,
         'max': 100
@@ -61,6 +67,9 @@ noUiSlider.create(sliderLivingSpace, {
     connect: true,
     tooltips: [ true , true],
     step: 1,
+    format: wNumb({
+        decimals: 0
+    }),
     range: {
         'min': 20,
         'max': 55
