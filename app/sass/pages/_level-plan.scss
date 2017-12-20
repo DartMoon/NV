@@ -3,6 +3,7 @@
 }
 
 .about-flat-list {
+	margin-bottom: 40px;
 	&__item {
 		margin: 0 20px;
 	}
@@ -40,6 +41,72 @@
 			font-size: 3rem;
 			color: $primary-color;
 			text-align: right;
+		}
+	}
+}
+
+
+.level-plan {
+	g {
+		path {
+			fill: #2a648f;
+		}
+		line {
+			stroke:  #2a648f ;
+		}
+		polygon {
+			fill: transparent;
+			opacity: .9;
+		}
+
+		&:hover {
+			cursor: pointer;
+			path {
+				fill: #fff;
+			}
+			line {
+				stroke: #fff;
+			}
+		}
+
+		&.one-flat {
+			&:not(.sold):hover {
+				polygon {
+					fill: #2a648f;
+				}
+			}
+		}
+
+		&.two-flat {
+			&:not(.sold):hover {
+				polygon {
+					fill: #f9ad81;
+				}
+			}
+		}
+
+		&.disabled {
+			polygon {
+				fill: #fff;
+			}
+			path {
+				fill: transparent;
+			}
+			line {
+				stroke: transparent;
+			}
+		}
+
+		&.sold {
+			polygon {
+				fill: #c0c0c0;
+			}
+			path {
+				fill: #fff;
+			}
+			line {
+				stroke: #fff;
+			}
 		}
 	}
 }

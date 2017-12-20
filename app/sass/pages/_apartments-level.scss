@@ -1,55 +1,25 @@
 .apartments-level {
-
-	.cls-1, .cls-2, .cls-3, .cls-4 {
+	a  {
+		text-decoration: none;
+	}
+	polygon,
+	text {
 		fill: transparent !important;
-	}
-	.cls-3 {
-		font-size: 36px;
-	}
-	.cls-4 {
-		font-size: 23px;
 	}
 	g {
 		&:hover {
 			cursor: pointer;
-			.cls-1 {
-				fill: #f9ad81 !important;
+			polygon {
 				opacity: .9;
+				&.st0 {
+					fill: #f9ad81 !important;
+				}
+				&.st1 {
+					fill: #2a648f !important;
+				}
 			}
-			.cls-2 {
-				fill: #2a648f !important;
-			}
-			.cls-3, .cls-4 {
+			text {
 				fill: #fff !important;
-			}
-		}
-	}
-}
-
-.level-plan {
-	.cls-1, .cls-2, .cls-3, .cls-5 {
-		fill: transparent !important;
-	}
-	.cls-4, .cls-6 {
-		stroke: transparent !important;
-	}
-
-	g {
-		&:hover {
-			cursor: pointer;
-			.cls-2 {
-				fill: #2a648f !important;
-				opacity: .9;
-			}
-			.cls-3 {
-				fill: #fff !important;
-				opacity: .9;
-			}
-			.cls-4, .cls-6 {
-				stroke: #fff !important;
-			}
-			.cls-5 {
-				fill: #f9ad81 !important;
 			}
 		}
 	}
@@ -65,4 +35,47 @@
 	&__text {
 		font-weight: 700;
 	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.apartments-level {
+		polygon,
+		text {
+			fill: transparent !important;
+		}
+		polygon {
+			opacity: .9;
+			&.st0 {
+				fill: #f9ad81 !important;
+			}
+			&.st1 {
+				fill: #2a648f !important;
+			}
+		}
+		text {
+			fill: #fff !important;
+		}
+
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
 }
