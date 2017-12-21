@@ -45,9 +45,9 @@
 	}
 }
 
-
 .level-plan {
 	g {
+
 		path {
 			fill: #2a648f;
 		}
@@ -70,15 +70,15 @@
 		}
 
 		&.one-flat {
-			&:not(.sold):hover {
+			&:hover {
 				polygon {
 					fill: #2a648f;
 				}
 			}
-		}
 
+		}
 		&.two-flat {
-			&:not(.sold):hover {
+			&:hover {
 				polygon {
 					fill: #f9ad81;
 				}
@@ -86,8 +86,9 @@
 		}
 
 		&.disabled {
+			cursor: not-allowed;
 			polygon {
-				fill: #fff;
+				fill: #fff !important;
 			}
 			path {
 				fill: transparent;
@@ -95,11 +96,22 @@
 			line {
 				stroke: transparent;
 			}
+			&:hover {
+				polygon {
+					fill: #fff;
+				}
+				path {
+					fill: transparent;
+				}
+				line {
+					stroke: transparent;
+				}
+			}
 		}
-
 		&.sold {
+			cursor: not-allowed;
 			polygon {
-				fill: #c0c0c0;
+				fill: #c0c0c0 !important;
 			}
 			path {
 				fill: #fff;
@@ -107,6 +119,111 @@
 			line {
 				stroke: #fff;
 			}
+			&:hover {
+				polygon {
+					fill: #c0c0c0;
+				}
+				path {
+					fill: #fff;
+				}
+				line {
+					stroke: #fff;
+				}
+			}
 		}
 	}
+
+}
+
+.m-flat-list {
+
+	&__item {
+		padding: 40px 20px;
+		margin-bottom: 20px;
+		&.one-flat {
+			background-color: $primary-color;
+		}
+		&.two-flat {
+			background-color: #f9ad81;
+		}
+		&.sold {
+			background-color: #c0c0c0;
+		}
+	}
+	&__link {
+		color: $color1;
+		&:hover,
+		&:focus {
+			color: $color1;
+			text-decoration: none;
+		}
+	}
+}
+
+.m-about-flat-list {
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.level-plan {
+		g {
+
+			path {
+				fill: #fff;
+			}
+			line {
+				stroke:  #fff ;
+			}
+
+			&.one-flat {
+				polygon {
+					fill: #2a648f;
+				}
+			}
+			&.two-flat {
+				polygon {
+					fill: #f9ad81;
+				}
+			}
+		}
+	}
+
+	.chose-list {
+		font-size: 1.8rem;
+		margin-top: 0;
+		&__item {
+			line-height: initial;
+			margin-bottom: 20px;
+			span {
+				font-size: 1.8rem;
+			}
+		}
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
 }

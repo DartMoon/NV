@@ -1,7 +1,16 @@
+.filter {
+	display: block;
+	max-width: 320px;
+	width: 100%;
+	//padding: 0 15px;
+	margin: 0 auto;
+	&__text {
+		font-weight: 700;
+	}
+}
+
 .input-slider {
 	position: relative;
-	max-width: 250px;
-	width: 100%;
 	margin: 35px 0 40px;
 	&:before,
 	&:after {
@@ -10,16 +19,15 @@
 		display: block;
 	}
 	&:before {
-		left: 0;
+		left: 16px;
 		//content: 'от';
 
 	}
 	&:after {
-		right: 0;
+		right: 16px;
 		//content: 'до';
 	}
 }
-
 .noUi-base {
 	height: 2px;
 }
@@ -39,7 +47,7 @@
 	height: 2px;
 
 	.noUi-handle {
-		left: 0;
+		left: -8px;
 		border: 0;
 		border-radius: 100%;
 		background: #f9ad81;

@@ -126,14 +126,21 @@ section {
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+	h3 {
+		&.rotate {
+			display: none;
+		}
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-	h3 {
-		&.rotate {
-			display: none;
+	.main-pad {
+		&_lg-t-0 {
+			padding-top: 0 !important;
+		}
+		&_lg-b-0 {
+			padding-bottom: 0 !important;
 		}
 	}
 }
@@ -142,6 +149,9 @@ section {
 @media only screen and (max-width : 768px) {
 	.main-pad {
 		padding: 80px 0;
+		&_lg-t-0 {
+			padding-top: 0;
+		}
 	}
 }
 
