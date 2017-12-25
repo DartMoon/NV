@@ -32,49 +32,54 @@ function initMap() {
     });
 }
 
-var sliderLevel = document.getElementById('slider-level');
-var sliderTotalArea = document.getElementById('slider-total-area');
-var sliderLivingSpace = document.getElementById('slider-living-space');
 
-noUiSlider.create(sliderLevel, {
-    start: [14],
-    connect: true,
-    tooltips: [ true ],
-    format: wNumb({
-        decimals: 0
-    }),
-    step: 1,
-    range: {
-        'min': 1,
-        'max': 24
+    var sliderLevel = document.getElementsByClassName('slider-level');
+    var sliderTotalArea = document.getElementsByClassName('slider-total-area');
+    var sliderLivingSpace = document.getElementsByClassName('slider-living-space');
+
+    for (var i = 0; i < 2; i++) {
+        noUiSlider.create(sliderLevel[i], {
+            start: [14],
+            connect: true,
+            tooltips: [ true ],
+            format: wNumb({
+                decimals: 0
+            }),
+            step: 1,
+            range: {
+                'min': 1,
+                'max': 24
+            }
+        });
+        noUiSlider.create(sliderTotalArea[i], {
+            start: [38, 100],
+            connect: true,
+            tooltips: [true, true ],
+            step: 1,
+            format: wNumb({
+                decimals: 0
+            }),
+            range: {
+                'min': 38,
+                'max': 100
+            }
+        });
+        noUiSlider.create(sliderLivingSpace[i], {
+            start: [20, 55],
+            connect: true,
+            tooltips: [ true , true],
+            step: 1,
+            format: wNumb({
+                decimals: 0
+            }),
+            range: {
+                'min': 20,
+                'max': 55
+            }
+        });
     }
-});
-noUiSlider.create(sliderTotalArea, {
-    start: [45, 80],
-    connect: true,
-    tooltips: [true, true ],
-    step: 1,
-    format: wNumb({
-        decimals: 0
-    }),
-    range: {
-        'min': 38,
-        'max': 100
-    }
-});
-noUiSlider.create(sliderLivingSpace, {
-    start: [15, 80],
-    connect: true,
-    tooltips: [ true , true],
-    step: 1,
-    format: wNumb({
-        decimals: 0
-    }),
-    range: {
-        'min': 20,
-        'max': 55
-    }
-});
+
+
 
 
 
