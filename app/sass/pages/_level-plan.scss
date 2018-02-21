@@ -11,18 +11,21 @@
 		width: 40px;
 		height: 40px;
 		margin: 0 auto;
+		&_four {
+			background-color: #85b683;
+		}
 		&_two {
-			background-color: $primary-color;
+			background-color: #F5AB80;
 		}
 		&_one {
-			background-color: #f9ad81;
+			background-color: #68A2BC;
 		}
 		&_sold {
 			background-color: #c0c0c0;
 		}
 	}
 	&__text {
-		font-size: 1.2rem;
+		font-size: 1.4rem;
 		line-height: 2.5;
 		text-align: center;
 		margin-top: 0;
@@ -46,94 +49,250 @@
 }
 
 .level-plan {
-	g {
 
-		path {
-			fill: #2a648f;
-		}
-		line {
-			stroke:  #2a648f ;
-		}
-		polygon {
-			fill: transparent;
-			opacity: .9;
-		}
+	.st0,
+	.st2 {
+		fill: transparent;
+		opacity:0.75;
+	}
 
+	.st1 {
+		fill: #68A2BC;
+	}
+
+	.one-flat {
+		&.current_flat {
+			& .st2 {
+				fill: #68A2BC;
+			}
+		}
 		&:hover {
-			cursor: pointer;
-			path {
-				fill: #fff;
-			}
-			line {
-				stroke: #fff;
+			& .st2 {
+				fill: #68A2BC;
 			}
 		}
-
-		&.one-flat {
-			&:hover {
-				polygon {
-					fill: #2a648f;
-				}
-			}
-
-		}
-		&.two-flat {
-			&:hover {
-				polygon {
-					fill: #f9ad81;
-				}
+	}
+	.two-flat {
+		&.current_flat {
+			& .st0 {
+				fill: #F5AB80;
 			}
 		}
-
-		&.disabled {
-			cursor: not-allowed;
-			polygon {
-				fill: #fff !important;
-			}
-			path {
-				fill: transparent;
-			}
-			line {
-				stroke: transparent;
-			}
-			&:hover {
-				polygon {
-					fill: #fff;
-				}
-				path {
-					fill: transparent;
-				}
-				line {
-					stroke: transparent;
-				}
+		&:hover {
+			& .st0 {
+				fill: #F5AB80;
 			}
 		}
-		&.sold {
-			cursor: not-allowed;
-			polygon {
-				fill: #c0c0c0 !important;
+	}
+	.four-flat {
+		&.current_flat {
+			& .st2 {
+				fill: #85b683;
 			}
-			path {
-				fill: #fff;
-			}
-			line {
-				stroke: #fff;
-			}
-			&:hover {
-				polygon {
-					fill: #c0c0c0;
-				}
-				path {
-					fill: #fff;
-				}
-				line {
-					stroke: #fff;
-				}
+		}
+		&:hover {
+			& .st2 {
+				fill: #85b683;
 			}
 		}
 	}
 
+	.one-flat,
+	.two-flat,
+	.four-flat {
+		cursor: pointer;
+		&.current_flat {
+			& .st1 {
+				fill: #FFFFFF;
+			}
+		}
+		&:hover {
+			& .st0,
+			& .st2 {
+				transition: all .25s;
+			}
+			& .st1 {
+				fill: #FFFFFF !important;
+				transition: all .25s;
+			}
+		}
+	}
+
+	& .sold {
+		cursor: not-allowed;
+		.st0{
+			fill:#c0c0c0 !important;
+		}
+		.st1{
+			fill:#FFFFFF;
+		}
+		.st2{
+			fill:#c0c0c0 !important;
+		}
+		&:hover {
+			.st0{
+				fill:#c0c0c0 !important;
+			}
+			.st1{
+				fill:#FFFFFF;
+			}
+			.st2{
+				fill:#c0c0c0 !important;
+			}
+		}
+	}
+
+	& .disabled {
+		cursor: not-allowed;
+		.st0{
+			fill:#f7f3c4 !important;
+		}
+		.st1{
+			fill: transparent !important;
+		}
+		.st2{
+			fill:#f7f3c4 !important;
+		}
+		&:hover {
+			.st0{
+				fill:#f7f3c4 !important;
+			}
+			.st1{
+				fill: transparent !important;
+			}
+			.st2{
+				fill:#f7f3c4 !important;
+			}
+		}
+	}
+
+	//.st0{opacity:0.75;fill:#F5AB80;}
+	//.st1{fill:#FFFFFF;}
+	//.st2{opacity:0.75;fill:#68A2BC;}
 }
+
+
+
+
+//.level-plan {
+//	& > g {
+//
+//		path {
+//			fill: #2a648f;
+//		}
+//		line {
+//			stroke:  #2a648f ;
+//		}
+//		polygon {
+//			fill: transparent;
+//			opacity: .9;
+//		}
+//
+//		&:hover {
+//			cursor: pointer;
+//			path {
+//				fill: #fff;
+//			}
+//			line {
+//				stroke: #fff;
+//			}
+//		}
+//
+//		&.one-flat {
+//			&.current_flat {
+//				polygon {
+//					fill: #f9ad81;
+//				}
+//			}
+//			&:hover {
+//				polygon {
+//					fill: #f9ad81;
+//				}
+//			}
+//
+//		}
+//		&.two-flat {
+//			&.current_flat {
+//				polygon {
+//					fill: #2a648f;
+//				}
+//			}
+//			&:hover {
+//				polygon {
+//					fill: #2a648f;
+//				}
+//			}
+//		}
+//		&.four-flat {
+//			&.current_flat {
+//				polygon {
+//					fill: #85b683;
+//				}
+//			}
+//			&:hover {
+//				polygon {
+//					fill: #85b683;
+//				}
+//			}
+//		}
+//		&.current_flat {
+//			path {
+//				fill: transparent !important;
+//			}
+//			line {
+//				stroke: transparent !important;
+//			}
+//		}
+//
+//		&.disabled {
+//			cursor: not-allowed;
+//			polygon {
+//				fill: #fff !important;
+//			}
+//			path {
+//				fill: transparent;
+//			}
+//			line {
+//				stroke: transparent;
+//			}
+//			&:hover {
+//				polygon {
+//					fill: #fff;
+//				}
+//				path {
+//					fill: transparent;
+//				}
+//				line {
+//					stroke: transparent;
+//				}
+//			}
+//		}
+//		&.sold {
+//			cursor: not-allowed;
+//			polygon {
+//				fill: #c0c0c0 !important;
+//			}
+//			path {
+//				fill: #fff;
+//			}
+//			line {
+//				stroke: #fff;
+//			}
+//			&:hover {
+//				polygon {
+//					fill: #c0c0c0;
+//				}
+//				path {
+//					fill: #fff;
+//				}
+//				line {
+//					stroke: #fff;
+//				}
+//			}
+//		}
+//	}
+//
+//}
 
 .m-flat-list {
 
@@ -189,12 +348,12 @@
 
 			&.one-flat {
 				polygon {
-					fill: #2a648f;
+					fill: #f9ad81;
 				}
 			}
 			&.two-flat {
 				polygon {
-					fill: #f9ad81;
+					fill: #2a648f;
 				}
 			}
 		}

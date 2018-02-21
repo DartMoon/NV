@@ -1,11 +1,34 @@
 .top-bg {
-	background: url("../img/top-banner.png") no-repeat center/ cover;
+	position: relative;
+	//background: url("../img/top-banner.png") no-repeat center/ cover;
+	background: url("../img/banner-day.jpg") no-repeat center/ cover;
 }
 .middle-bg {
 	background: url("../img/middle-banner.png") no-repeat center/ cover;
 }
 .bottom-bg {
-	background: url("../img/bottom-banner.png") no-repeat center bottom/ cover;
+	background: url("../img/second-img.png") no-repeat center bottom/ cover;
+}
+
+.is_overlay {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+#trailer {
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	overflow: hidden;
+}
+
+#trailer > video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto; height: auto;
 }
 
 header {
@@ -14,19 +37,25 @@ header {
 	&.banner {
 		max-height: 400px !important;
 		min-height: 400px !important;
-		background: url("../img/banner.png") no-repeat center/cover;
+		//background: url("../img/banner.png") no-repeat center/cover;
+		background: url("../img/banner-night.jpg") no-repeat bottom/ cover;
+		background-position-y: 80%
 	}
 }
 
 .m-banner {
+	//transform: translateX(32%);
+	transform: translateX(-50%);
 	&__img {
-
+		display: block;
+		margin: 0 auto;
 	}
 	&__title {
 		font-size: 2.4rem;
 		line-height: 1.25;
 		color: $color1;
 		margin-top: 125px;
+		text-align: center;
 	}
 }
 
@@ -44,31 +73,43 @@ header {
 	}
 }
 
+@media (max-width: 1440px) {
+	.m-banner {
+		transform: translateX(16%);
+		&__img {
+			width: 75% !important;
+		}
+		&__title {
+			font-size: 1.8rem;
+			margin-top: 50px;
+		}
+	}
+}
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+	.m-banner {
+		transform: translateX(0);
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+	.top-bg {
+		background: url("../img/mobile-banner.jpg") no-repeat center/ cover;
+	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-	.m-banner {
-		&__title {
-			font-size: 2.2rem;
-			margin-top: 50px;
-			text-align: center;
-		}
-	}
-
 	.recall {
 		right: 15px;
 		top: 15px;
 	}
 
+	.is_overlay {
+		display: none;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -78,4 +119,19 @@ header {
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
 
+}
+
+@media (min-aspect-ratio: 16/9) {
+	#trailer > video { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+	#trailer > video { width: 300%; left: -100%; }
+}
+/* Если есть поддержка object-fit (Chrome/Chrome для Android, Safari в iOS 8 и Opera), используем его: */
+@supports (object-fit: cover) {
+	#trailer > video {
+		top: 0; left: 0;
+		width: 100%; height: 100%;
+		object-fit: cover;
+	}
 }

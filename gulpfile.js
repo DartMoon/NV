@@ -29,6 +29,8 @@ gulp.task('js', ['common-js'], function() {
 		'app/libs/wnumb-1.1.0/wNumb.js',
 		'app/libs/popper/popper.js',
 		'app/libs/bootstrap/dist/js/bootstrap.min.js',
+        'app/libs/aos-master/dist/aos.js',
+        'app/libs/spincrement/jquery.spincrement.min.js',
 		'app/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))

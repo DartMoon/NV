@@ -4,24 +4,42 @@
 
 html {
 	font-size: 10px;
+	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
 body {
-	font-family: 'Raleway', sans-serif;
+	//font-family: 'Raleway', sans-serif;
+	//font-family: 'Montserrat', sans-serif;
+	font-family: 'Poiret One', cursive;
+
 	position: relative;
 	width: 100%;
 	height: 100%;
 	overflow-x: hidden !important;
 	overflow-y: scroll !important;
 	padding: 0;
-	font-size: 1.6rem;
-	letter-spacing: 1px;
+	font-size: 1.8rem;
+	font-weight: 600;
+	letter-spacing: .5px;
 	color: $text-color1;
+	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
 h2 {
 	font-size: 2.2rem;
 	padding-bottom: 15px;
+	a {
+		color: $color1;
+		&:hover,
+		&:focus {
+			color: $color1;
+
+		}
+	}
 }
 
 h3 {
@@ -64,8 +82,11 @@ h2,h3 {
 
 p {
 	line-height: 2;
-	text-align: justify;
 	margin-top: 45px;
+}
+
+a {
+	font-weight: 600;
 }
 
 section {
@@ -90,6 +111,19 @@ section {
 .min-h-85 {
 	min-height: 85px;
 }
+.max-w-320 {
+	max-width: 320px;
+	width: 100%;
+}
+
+#top {
+	cursor: pointer;
+	display: none;
+	font-size: 150%;
+	position: fixed;
+	left: 100px;
+	bottom: 100px;
+}
 
 @import "buttons";
 
@@ -97,6 +131,7 @@ section {
 @import "partial/banner";
 @import "partial/footer";
 @import "partial/slider";
+@import "partial/bg-block";
 
 @import "pages/index";
 @import "pages/complex";
@@ -107,6 +142,7 @@ section {
 @import "pages/apartments-level";
 @import "pages/level-plan";
 @import "pages/floor-plan";
+@import "pages/character";
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1460px) {
@@ -125,7 +161,7 @@ section {
 }
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
+@media only screen and (max-width : 1285px) {
 	h3 {
 		&.rotate {
 			display: none;
@@ -142,6 +178,9 @@ section {
 		&_lg-b-0 {
 			padding-bottom: 0 !important;
 		}
+	}
+	#top {
+		display: none !important;
 	}
 }
 

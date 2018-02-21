@@ -1,5 +1,5 @@
 .check-flat {
-	background: url("../img/check-flat.png") no-repeat center/cover;
+	background: url("../img/check-flat.jpg") no-repeat center/cover;
 }
 
 .h1020 {
@@ -19,13 +19,13 @@
 		position: relative;
 		overflow: hidden;
 		&_first {
-			background: url("../img/first-img.png") no-repeat center/ cover;
+			background: url("../img/first-img.jpg") no-repeat center/ cover;
 		}
 		&_second {
 			background: url("../img/second-img.png") no-repeat center/ cover;
 		}
 		&_third {
-			background: url("../img/third-img.png") no-repeat center/ cover;
+			background: url("../img/third-img.jpg") no-repeat center/ cover;
 		}
 		&_fourth {
 			background: url("../img/fourth-img.png") no-repeat center/ cover;
@@ -71,6 +71,9 @@
 	display: block;
 	width: 100%;
 	height: 600px;
+	p {
+		text-align: center;
+	}
 }
 
 /* Large Devices, Wide Screens */

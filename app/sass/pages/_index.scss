@@ -1,4 +1,5 @@
 .comfort {
+	background: url("../img/sheme.jpg") no-repeat center/cover;
 	& .col {
 		max-width: 300px;
 	}
@@ -15,6 +16,7 @@
 }
 
 .about-towers {
+	background: url("../img/about-towers.jpg") no-repeat center/cover;
 	a {
 		margin-top: 25px;
 	}
@@ -39,12 +41,11 @@
 }
 
 .contacts {
-	p {
-		//margin-top: 0;
+	&_bg {
+		background: url("../img/in-contact-block.png") no-repeat bottom/cover;
 	}
 	p,a {
 		font-size: 1.8rem;
-		font-weight: 500;
 	}
 	p,a,i {
 		color: $color1;
@@ -87,6 +88,10 @@
 		border: 1px solid #494949;
 		padding-left: 15px;
 		margin-bottom: 35px;
+		&_textarea {
+			height: 110px;
+			padding: 15px;
+		}
 	}
 	&__label {
 		font-size: 1.6rem;

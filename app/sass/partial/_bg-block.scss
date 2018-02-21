@@ -1,0 +1,77 @@
+.about-project {
+	.container {
+		background: url("../img/bg-block/about-project.svg") no-repeat top left/50%;
+	}
+}
+.infrastructure {
+	.container {
+		background: url("../img/bg-block/comfort.svg") no-repeat top center;
+	}
+}
+.environment {
+	.container {
+		background: url("../img/bg-block/plus.svg") no-repeat top left/50%;
+	}
+}
+.location-block {
+	background: url("../img/bg-block/location.svg") no-repeat top;
+}
+.energy-block {
+	background: url("../img/bg-block/energy.svg") no-repeat top;
+}
+
+.history-block {
+	background: url("../img/bg-block/istoria.svg") no-repeat top;
+}
+.development-block {
+	background: url("../img/bg-block/razrabotka.svg") no-repeat top;
+}
+
+.embodiment-block {
+	background: url("../img/bg-block/voploshenie.svg") no-repeat top;
+}
+
+.partners {
+	.container {
+		background: url("../img/bg-block/brickdevelopment.svg") no-repeat top left/50%;
+	}
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.about-project,
+	.infrastructure,
+	.environment,
+	.location-block,
+	.energy-block,
+	.history-block,
+	.development-block,
+	.embodiment-block,
+	.partners {
+		background-image: none;
+		.container {
+			background-image: none
+		}
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}

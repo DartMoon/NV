@@ -32,13 +32,15 @@
 	height: 2px;
 }
 .noUi-connect {
-	background: $primary-color;
+	//background: $primary-color;
+	background: $text-color1;
 	box-shadow: none;
 	height: 2px;
 	border-radius: 0;
 }
 .noUi-target {
-	background: $primary-color;
+	//background: $primary-color;
+	background: $text-color1;
 	border: 0;
 	border-radius: 0;
 	box-shadow: none;
@@ -50,7 +52,8 @@
 		left: -8px;
 		border: 0;
 		border-radius: 100%;
-		background: #f9ad81;
+		//background: #f9ad81;
+		background: #e9ecef;
 		cursor: pointer;
 		box-shadow: none;
 
@@ -60,6 +63,9 @@
 		&:before,
 		&:after {
 			display: none;
+		}
+		&:hover {
+			background: #f9ad81;
 		}
 	}
 }

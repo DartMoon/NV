@@ -1,8 +1,92 @@
 .flat-list {
+	font-size: 1.8rem;
 	margin-bottom: 55px;
+	max-width: 230px;
+	width: 100%;
+	&_options {
+		max-width: 100%;
+		font-size: 2rem;
+		line-height: 30px;
+	}
 	&__item {
 		&:not(:last-child) {
 			margin-bottom: 25px;
+		}
+		& span {
+			font-weight: 700;
+		}
+	}
+}
+
+.floor-option-list {
+	margin: 60px 0 40px;
+	&__link {
+		color: $text-color1;
+		&:hover,
+		&:focus {
+			color: $color1;
+		}
+	}
+}
+
+
+.nav-tabs .nav-item {
+	margin-bottom: -1px;
+	width: 50%;
+	text-align: center;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+	color: $color1;
+	background-color: $primary-color;
+	border-color: $primary-color;
+}
+
+.nav-tabs .nav-link {
+	border: 1px solid transparent;
+	border-radius: 0;
+	font-size: 2rem;
+	color: $primary-color;
+	border-bottom: 1px solid $primary-color;
+}
+
+.nav-link {
+	display: block;
+	padding: 25px;
+}
+
+.unique-flat {
+	text-align: center;
+	margin-bottom: 130px;
+	img {
+		display: block;
+		width: 75%;
+		margin: 0 auto 20px;
+	}
+	ul {
+		margin: 0 auto;
+	}
+}
+
+.change-floor {
+	&__display {
+		font-size: 30px;
+		color: $primary-color;
+		margin: 20px 0;
+		text-align: center;
+	}
+	&__btn {
+		width: 100%;
+		border: 0;
+		background: transparent;
+		padding: 0;
+		margin: 0;
+		color: $primary-color;
+		cursor: pointer;
+		&:hover,
+		&:focus {
+			outline: none;
 		}
 	}
 }
